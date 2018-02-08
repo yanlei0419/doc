@@ -1,1 +1,0 @@
-grant connect,resource,dba to vegetto

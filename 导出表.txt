@@ -1,5 +1,0 @@
-
-exp pmb/pmb@10.225.1.10/nexch file=table_cpmtccy_and_cpmtcutm.dmp tables=pm_cpmtcutm,pm_cpmtccy ;
-imp prdpmb/prdpmb@10.225.1.10/nexch  file=/pmb/table_cpmtccy_and_cpmtcutm.dmp full=y;
-select userenv('language')  from dual
- 
