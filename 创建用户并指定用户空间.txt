@@ -1,0 +1,2 @@
+create user vegetto identified by 80023773
+default tablespace vegetto
