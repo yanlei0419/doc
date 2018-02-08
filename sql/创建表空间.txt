@@ -1,0 +1,6 @@
+create tablespace vegetto logging
+datafile  'd:\data\oracle\vegetto.dbf'
+size 50m
+autoextend on
+next 50m
+extent management local
