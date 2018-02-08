@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员登陆_乐蜂网</title>
+<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+<script language="javascript" type="text/jscript" src="scripts/denglu.js"></script>
+</head>
+
+<body onkeydown="if(event.keyCode=='13') checkform();">
+<!-- 总容器 -->
+<div id="container">
+	<!-- 头部 -->
+    <div class="header">
+    	<p><a href="indexshop.html"><img src="images/lc_toplogo.jpg" name="tuxiang" border="0"></a></p>
+	</div>
+    <!-- 居中 -->
+    <center>
+    <!-- 中间主体内容 -->
+    <div id="pageBody">
+            <!-- 左边图案 -->
+            <div id="img">
+            	<img src="images/login/lc_loginleft.jpg" />
+      		</div>
+        <!-- 登陆框 -->
+        <div id="denglu">
+            <!-- 插入一个两行一列的表格作为框架 -->
+            <table border="0" class="table">
+                	<tr>
+                    	<td align="center">
+                            <form action="" method="post" id="myform" name="myform" onsubmit="return checkform();">
+                                <!-- 插入一个五行两列的表格盛放登陆表 -->
+                                <table width="90%" border="0" class="smalltable">
+                                    <tr>
+                                      <td height="30" colspan="2" align="left" valign="middle">
+                                      	<h3>登录乐蜂网</h3><div id="baocuo"></div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td width="20%" height="30" align="right" valign="top">用户名：</td>
+                                        <td width="80%" height="30" align="left" valign="top">
+                                            <label for="txtUserName"></label>
+                                            <input name="txtUserName" type="text" id="txtUserName" size="25" value="会员名/邮箱/手机" onblur="javascript:xian();" onfocus="javascript:yin();" class="grey" />
+                                        </td>
+                                  </tr>
+                                    <tr>
+                                      <td height="30" align="right" valign="middle">密&nbsp;&nbsp;&nbsp; 码：</td>
+                                        <td height="30" align="left" valign="middle"><label for="txtPassword"></label>
+                                        <input name="txtPassword" type="password" id="txtPassword" size="25" />
+                                       &nbsp; <a href="#">忘记密码？</a></td>
+                                  </tr>
+                                    <tr>
+                                        <td height="30" valign="middle">&nbsp;</td>
+                                        <td height="30" align="left" valign="middle"><input name="chkjizhu" type="checkbox" id="chkjizhu" value="记住用户名" checked="checked" />
+                                        <label for="chkjizhu">记住用户名</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="50" valign="middle">&nbsp;</td>
+                                        <td height="50" align="left" valign="middle">
+                                            <input name="btndenglu" type="image" id="btndenglu" src="images/login/lc_denglu_btn.png" align="middle" />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<a href="register.html">立即注册
+                                        </a></td>
+                                    </tr>
+                                </table>
+                          </form>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td align="center"><table width="85%" border="0">
+                    	  <tr>
+                    	    <td height="20" align="left" valign="middle">使用合作网站账号登录：</td>
+                  	    </tr>
+                    	  <tr>
+                    	    <td height="30" align="left" valign="bottom"><a href="#"><img src="images/login/lc_denglu_tubiao1.png" width="73" height="22" class="imga" /></a><a href="#"><img src="images/login/lc_denglu_tubiao2.png" width="61" height="22" class="liubai" /></a>
+                                <a href="#"><img src="images/login/lc_denglu_tubiao3.png" width="92" height="22" class="liubai" /></a><a href="#"><img src="images/login/lc_denglu_tubiao4.png" width="67" height="22" class="liubai" /></a>
+                            </td>
+                  	    </tr>
+                    	  <tr>
+                    	    <td height="30" align="left" valign="top"><a href="#"><img src="images/login/lc_denglu_tubiao5.png" width="119" height="22" class="imga" /></a><a href="#"><img src="images/login/lc_denglu_tubiao6.png" width="49" height="22" class="liubai" /></a>
+                            </td>
+                  	    </tr>
+                  	  </table></td>
+                    </tr>
+                </table>
+</div>
+        </div>
+        <div id="footer">
+   	<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="44">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="hengxian" height="35" align="center" valign="bottom" class="td1"><a href="#" >EDM邮件订阅/退订</a>&nbsp; <a href="#">关于lafaso</a>&nbsp; <a href="#">免责声明</a>&nbsp;  <a href="#"> 隐私声明</a>&nbsp; <a href="#">版权声明</a>&nbsp; <a href="#">招聘信息</a>&nbsp; <a href="#">网站地图</a>&nbsp; <a href="#">联系我们</a>&nbsp; <a href="#">帮助中心</a>&nbsp; <a href="#">网站联盟</a></td>
+  </tr>
+  <tr>
+    <td height="22" align="center" valign="bottom" class="td1"><font color="#A6A6A6">Copyright ©2008-2012 Lafaso.com All Rights Reserved.</font> &nbsp; <a href="#">京ICP证080382号</a>&nbsp; <a href="#">京ICP备10006831号-1</a><font color="#A6A6A6">&nbsp; 京公网安备110105014183</font>&nbsp; <a href="#">营业执照</a></td>
+  </tr>
+  <tr>
+    <td height="84" align="center"><a href="#"><img src="images/footer/footer_ba.gif" border="0" /></a>&nbsp; <a href="#"><img src="images/footer/footer_kx.jpg" border="0" /></a>&nbsp; <a href="#"><img src="images/footer/footer_hl.jpg" border="0" /></a></td>
+  </tr>
+</table>
+    </div>
+    </center>
+</div>
+</body>
+</html>

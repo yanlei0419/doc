@@ -1,0 +1,151 @@
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"微软雅黑";
+	font-size:12px;
+}
+#contion{
+	width:1346px;
+	margin:0px auto;
+}
+#top{
+	width:1346px;
+	height:27px;
+	background-image:url(../images/gwc/top_img.jpg);
+	background-repeat:repeat-x;
+}
+#header{
+	width:950px;
+	height:116px;
+	margin:0px auto;
+	background-image:url(../images/gwc/header_img.jpg);
+}
+#main01{
+	width:950px;
+	height:245px;
+	margin:0px auto;
+	padding-top:100px;
+	padding-left:300px;
+}
+#main02{
+	margin:0px auto;
+	width:950px;
+	height:731px;
+}
+#footer{
+	margin:0px auto;
+	width:950px;
+	height:31px;
+	background-color:#F1F1F1;
+}
+#main02_th{
+	width:950px;
+	height:650px;
+	margin:0px auto;
+}
+#main02_hg{
+	width:950px;
+	height:197px;
+	margin:0px auto;
+}
+#sub2{
+}
+#sub3{
+	color:#F00;
+	font-weight:bolder;
+}
+#sub4{
+	color:#F00;
+	font-size:15px;
+	font-weight:bolder;
+}
+#sub5{
+	color:#F00;
+	font-size:15px;
+	font-weight:bolder;
+}
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+#header_inf{
+	width:566px;
+	height:27px;
+	position:relative;
+}
+.ul1{
+	list-style-type:none;
+	position:absolute;
+	top:0px;
+	left:276px;
+	width:74px;
+	height:17px;
+	margin:0px;
+	padding:0px;
+}
+.ul1 li{
+	background-image:url(../images/gwc/header_arrow1.jpg);
+	background-repeat:no-repeat;
+}
+.ul1 li:hover{
+	background-image:url(../images/gwc/header_arrow2.jpg);
+	background-repeat:no-repeat;
+	border:#F00 solid 1px;
+}
+.ul1 li:hover ul{
+	display:block;
+}
+.ul1 li:hover ul li{
+	background-image:none;
+	border:none;
+}
+.ul1 li ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	display:none;
+}
+.ul1 li ul li{
+	background-image:none;
+	background-color:#FFF2FA;
+	border-bottom:solid #FFF 1px;
+	line-height:20px;
+}
+.ul1 a:link{
+	color:#A1969C;
+	text-decoration:none;
+}
+.ul1 a:hover{
+	color:#A1969C;
+	text-decoration:underline;
+}
+.ul1 a:visited{
+	color:#A1969C;
+	text-decoration:none;
+}
+.ul1_a a:link{
+	color:#000;
+	text-decoration:none;
+}
+.ul1_a a:hover{
+	color:#F00;
+	text-decoration:underline;
+}
+.ul1_a a:visited{
+	color:#000;
+	text-decoration:none;
+}
+

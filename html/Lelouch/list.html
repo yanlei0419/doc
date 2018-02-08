@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript"  src="scripts/jquery.min.js"></script>
+<script type="text/javascript">
+		//品牌翻转
+var allBrandAnimate = function(t,time){
+	//寻找..brand b后面元素的长度
+	var d=time;//反转的时间
+	if(t.find('.brand b').length != 0){return false;}
+	
+	t.find('.brand a').each(function(){
+		//将图片的 alt 属性 添加到 a 标记里
+		$(this).append('<b>' + $(this).find('img').attr('alt') + '</b>')
+	});
+	
+	t.find('.brand a').hover(function(){
+		$(this).find('img').stop().animate({
+			'height':0,
+			'top':'35px'
+		},d,
+		function(){
+			$(this).hide().next().show();
+			$(this).next().animate({
+				'height':'70px',
+				'top':'0'
+			},d);
+		});
+	},
+	
+	
+	function(){
+		//在a标记下找到 b标价 设置高为0
+		$(this).find('b').animate({
+			'height':0,
+			'top':'35px'
+		},d,
+		function(){
+			//.prev()	获得匹配元素集合中每个元素紧邻的前一个同辈元素，由选择器筛选（可选）。
+			$(this).hide().prev().show().animate({
+				'height':'70px',
+				'top':'0'
+			},d);
+		});
+	});
+}
+
+</script>
+
+<style>
+
+
+.brand{
+	position:absolute;
+	left:0;
+	width:1020px;
+	height:174px;
+	border-bottom:
+	1px dashed #d1d1d1;
+	overflow:hidden;
+	} 
+.brand a{
+	display:inline;
+	position:relative;
+	float:left;
+	width:112px;
+	height:72px;
+	padding:0 5px 15px 10px;
+	line-height:72px;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:14px;
+	overflow:hidden;} 
+.brand a img{position:absolute;left:10px;width:110px;height:70px;border:1px solid #e9e8e8;} 
+.brand a b{display:none;position:absolute;top:36px;left:10px;width:110px;height:0;background:#FF5050;border:1px solid #e9e8e8;cursor:pointer;overflow:hidden;} 
+</style>
+
+</head>
+
+<body>
+            <div id="vegetto" class="bor03 cont">
+				<div id="c01" class="brand">
+					<a style="border-bottom-color:#CCC" href="#"><img src="images/index_img/chanzhen.jpg" alt="婵真" width="110" height="70" /></a>
+                </div>      
+			</div>
+
+
+
+
+</body>
+<script type="text/javascript">
+allBrandAnimate($('#vegetto'),80);
+</script>
+</html>
